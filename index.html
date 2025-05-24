@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  <title>Chat app css illustration master</title>
+</head>
+<body>
+  <!-- Background color elements -->
+  <div class="purple-color" aria-hidden="true"></div>
+  <div class="white-color" aria-hidden="true"></div>
+  
+  <main>
+    <!-- Mobile chat interface section -->
+    <div class="mobile-div">
+      <div class="white-div" aria-hidden="true"></div>
+      
+      <!-- Chat header with sender info -->
+      <div class="sender-div">
+        <div class="right-sender">
+          <img src="images/left-arrow-backup-2-svgrepo-com.svg" class="back-arrow" alt="Back button">
+          <img src="images/avatar.jpg" class="ava-img" alt="Samuel Green's profile picture">
+          <div class="name-div">
+            <p class="name-para">
+              Samuel Green
+            </p>
+            <p class="available-para">
+              Available to Walk
+            </p>
+          </div>
+        </div>
+        <img src="images/three-dots-svgrepo-com.svg" class="three-dots" alt="More options">
+      </div>
+      
+      <!-- Sender messages -->
+      <div class="sender-res">
+        <p class="sender-message">
+          That sounds great. I'd be happy with that.
+        </p>
+        <p class="sender-message">
+          Could you send over some pictures of your dog, please?
+        </p>
+      </div>
+      
+      <!-- User messages with dog pictures -->
+      <div class="meine-res">
+        <div class="dogs-div">
+          <img src="images/dog-image-1.jpg" class="dog-img" alt="Happy dog picture 1">
+          <img src="images/dog-image-2.jpg" class="dog-img" alt="Happy dog picture 2">
+          <img src="images/dog-image-3.jpg" class="dog-img" alt="Happy dog picture 3">
+        </div>
+        <p class="meine-mes">
+          Here are a few pictures. She's a happy girl!
+        </p>
+        <p class="meine-mes">
+          Can you make it?
+        </p>
+      </div>
+      
+      <!-- Sender response -->
+      <div class="sender-res">
+        <p class="sender-message">
+          She looks so happy! The time we discussed works. How long shall I take her out for?
+        </p>
+      </div>
+      
+      <!-- Booking options form -->
+      <form>
+        <div class="option-div">
+          <label class="radio-option" for="walk">
+            <input type="radio" id="walk" name="Type">
+            <p class="option">
+              30 minute walk
+            </p>
+          </label>
+          <p class="price-para">
+            $29
+          </p>
+        </div>
+        <div class="option-div">
+          <label class="radio-option" for="hour">
+            <input type="radio" id="hour" name="Type">
+            <p class="option">
+              1 hour walk
+            </p>
+          </label>
+          <p class="price-para">
+            $49
+          </p>
+        </div>
+      </form>
+      
+      <!-- Message input area -->
+      <div class="type-div">
+        <input class="type-input" type="text" placeholder="Type a message…" aria-label="Type your message">
+        <div class="send-div">
+          <img src="images/arrow-right-2.svg" class="send" alt="Send message">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Description section -->
+    <div class="simple-div">
+      <p class="simple-para">
+        Simple booking
+      </p>
+      <p class="stay-para">
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.
+      </p>
+    </div>
+  </main>
+</body>
+</html>
