@@ -15,6 +15,7 @@ body {
     justify-content: center;
     font-family: "Rubik";
     padding: 0 16.5rem 0 22.6875rem; /* 264px -> 16.5rem, 363px -> 22.6875rem */
+    box-sizing: border-box; /* Include padding in dimensions */
 }
 
 /* Purple gradient background element */
@@ -316,7 +317,9 @@ main {
 @media (max-width: 50rem) { /* 800px -> 50rem */
     body {
         padding: 4rem 2.1875rem; /* 64px 35px -> converted */
-        overflow: hidden;
+        overflow: auto;
+        min-height: auto;
+        box-sizing: border-box !important;
     }
     main {
         display: flex;
@@ -326,14 +329,18 @@ main {
         gap: 4.375rem; /* 70px -> 4.375rem */
     }
     .purple-color {
-        left: -19.5rem; /* 312px -> 19.5rem */
+        left: -62px; /* 312px -> 19.5rem */
         height: 31.25rem; /* 500px -> 31.25rem */
-        width: 31.25rem; /* 500px -> 31.25rem */
+        width: 15.625rem; /* 500px -> 31.25rem */
+        border-bottom-left-radius: 0; /* 1000px -> 62.5rem */
+        border-bottom-right-radius: 62.5rem; /* 1000px -> 62.5rem */
     }
     .white-color {
-        right: -19.5rem; /* 312px -> 19.5rem */
+        right: 0;
         height: 31.25rem; /* 500px -> 31.25rem */
-        width: 31.25rem; /* 500px -> 31.25rem */
+        width: 11.75rem; /* 500px -> 31.25rem */
+        border-top-left-radius: 62.5rem; /* 1000px -> 62.5rem */
+        border-top-right-radius: 0rem; /* 1000px -> 62.5rem */
     }
     .simple-div {
         width: 19.0625rem; /* 305px -> 19.0625rem */
