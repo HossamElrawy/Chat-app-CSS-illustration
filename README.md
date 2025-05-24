@@ -1,3 +1,5 @@
+# Chat App CSS Illustration
+
 A responsive mobile chat application interface built with pure HTML and CSS, featuring gradient backgrounds and interactive UI elements.
 
 ## Features
