@@ -1,8 +1,11 @@
+/* Reset and base styles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Main body styling */
 body {
     position: relative;
     min-height: 100vh;
@@ -11,243 +14,308 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Rubik";
-    padding: 0 264px 0 363px;
+    padding: 0 16.5rem 0 22.6875rem; /* 264px -> 16.5rem, 363px -> 22.6875rem */
 }
-.purple-color{
+
+/* Purple gradient background element */
+.purple-color {
     position: absolute;
     top: 0;
-    left: -80px;
+    left: -5rem; /* 80px -> 5rem */
     background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    height: 700px;
-    width: 500px;
+    height: 43.75rem; /* 700px -> 43.75rem */
+    width: 31.25rem; /* 500px -> 31.25rem */
     z-index: -1;
-    border-bottom-left-radius: 1000px;
-    border-bottom-right-radius: 1000px;
+    border-bottom-left-radius: 62.5rem; /* 1000px -> 62.5rem */
+    border-bottom-right-radius: 62.5rem; /* 1000px -> 62.5rem */
 }
+
+/* White background element */
 .white-color {
     position: absolute;
     bottom: 0;
-    right: -174px;
+    right: -10.875rem; /* 174px -> 10.875rem */
     background-color: hsl(270, 20%, 96%);
-    height: 700px;
-    width: 500px;
+    height: 43.75rem; /* 700px -> 43.75rem */
+    width: 31.25rem; /* 500px -> 31.25rem */
     z-index: -1;
-    border-top-left-radius: 1000px;
-    border-top-right-radius: 1000px;
+    border-top-left-radius: 62.5rem; /* 1000px -> 62.5rem */
+    border-top-right-radius: 62.5rem; /* 1000px -> 62.5rem */
 }
+
+/* Main content container */
 main {
     display: flex;
-    gap: 126px;
+    gap: 7.875rem; /* 126px -> 7.875rem */
 }
+
+/* Mobile device mockup styling */
 .mobile-div {
-    width: 247px;
-    border: 8px solid white;
+    width: 15.4375rem; /* 247px -> 15.4375rem */
+    border: 0.5rem solid white; /* 8px -> 0.5rem */
     background-color: hsl(270, 20%, 96%);
-    border-radius: 24px;
+    border-radius: 1.5rem; /* 24px -> 1.5rem */
     position: relative;
-    box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.375rem rgb(0, 0, 0, 0.3); /* 6px -> 0.375rem */
 }
+
+/* Sender header section */
 .sender-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    padding: 30px 16px 12px 14px;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    padding: 1.875rem 1rem 0.75rem 0.875rem; /* 30px 16px 12px 14px -> converted */
+    border-top-left-radius: 1.5rem; /* 24px -> 1.5rem */
+    border-top-right-radius: 1.5rem; /* 24px -> 1.5rem */
+    border-bottom-left-radius: 0.5rem; /* 8px -> 0.5rem */
+    border-bottom-right-radius: 0.5rem; /* 8px -> 0.5rem */
 }
+
+/* Mobile notch styling */
 .white-div {
     background-color: white;
     position: absolute;
-    width: 129px;
-    height: 18px;
+    width: 8.0625rem; /* 129px -> 8.0625rem */
+    height: 1.125rem; /* 18px -> 1.125rem */
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 0.75rem; /* 12px -> 0.75rem */
+    border-bottom-right-radius: 0.75rem; /* 12px -> 0.75rem */
 }
+
+/* Sender info container */
 .right-sender {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem; /* 8px -> 0.5rem */
 }
+
+/* Back arrow icon */
 .back-arrow {
-    width: 10px;
+    width: 0.625rem; /* 10px -> 0.625rem */
     cursor: pointer;
 }
+
+/* Three dots menu icon */
 .three-dots {
-    width: 18px;
+    width: 1.125rem; /* 18px -> 1.125rem */
     cursor: pointer;
 }
+
+/* Avatar image */
 .ava-img {
-    width: 24px;
-    border-radius: 50px;
-    border: 1px solid white;
+    width: 1.5rem; /* 24px -> 1.5rem */
+    border-radius: 3.125rem; /* 50px -> 3.125rem */
+    border: 0.0625rem solid white; /* 1px -> 0.0625rem */
     cursor: pointer;
 }
+
+/* Name and status container */
 .name-div {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 0.375rem; /* 6px -> 0.375rem */
 }
+
+/* Sender name text */
 .name-para {
     color: white;
-    font-size: 11px;
+    font-size: 0.6875rem; /* 11px -> 0.6875rem */
     font-weight: 500;
     cursor: pointer;
 }
+
+/* Availability status text */
 .available-para {
-    font-size: 8px; 
+    font-size: 0.5rem; /* 8px -> 0.5rem */
     color: hsl(276, 100%, 81%);
     font-weight: 400;
 }
+
+/* Received messages container */
 .sender-res {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding: 11px 94px 16px 9px;
-    gap: 8px;
+    padding: 0.6875rem 5.875rem 1rem 0.5625rem; /* 11px 94px 16px 9px -> converted */
+    gap: 0.5rem; /* 8px -> 0.5rem */
 }
+
+/* Individual received message */
 .sender-message {
-    font-size: 8.4px;
+    font-size: 0.525rem; /* 8.4px -> 0.525rem */
     color: hsl(276, 55%, 52%);
     background-color: hsl(276, 17%, 89%);
-    padding: 8px;
-    border-radius: 16px;
-    border-bottom-left-radius: 3px;
+    padding: 0.5rem; /* 8px -> 0.5rem */
+    border-radius: 1rem; /* 16px -> 1rem */
+    border-bottom-left-radius: 0.1875rem; /* 3px -> 0.1875rem */
 }
+
+/* Sent messages container */
 .meine-res {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: end;
-    padding: 11px 9px 16px 94px;
-    gap: 8px;
+    padding: 0.6875rem 0.5625rem 1rem 5.875rem; /* 11px 9px 16px 94px -> converted */
+    gap: 0.5rem; /* 8px -> 0.5rem */
 }
+
+/* Dog images container */
 .dogs-div {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem; /* 8px -> 0.5rem */
 }
+
+/* Individual dog image */
 .dog-img {
-    width: 40px;
-    border-radius: 9px;
+    width: 2.5rem; /* 40px -> 2.5rem */
+    border-radius: 0.5625rem; /* 9px -> 0.5625rem */
 }
+
+/* Individual sent message */
 .meine-mes {
-    font-size: 8px;
+    font-size: 0.5rem; /* 8px -> 0.5rem */
     color: hsl(271, 15%, 43%);
     background-color: white;
-    padding: 8.4px;
-    border-radius: 16px;
-    border-bottom-right-radius: 3px;
+    padding: 0.525rem; /* 8.4px -> 0.525rem */
+    border-radius: 1rem; /* 16px -> 1rem */
+    border-bottom-right-radius: 0.1875rem; /* 3px -> 0.1875rem */
 }
+
+/* Walk option container */
 .option-div {
-    margin-left: 9px;
+    margin-left: 0.5625rem; /* 9px -> 0.5625rem */
     background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    margin-bottom: 8px;
-    width: 160px;
-    height: 32px;
-    border-radius: 9px;
-    border-bottom-left-radius: 3px;
+    margin-bottom: 0.5rem; /* 8px -> 0.5rem */
+    width: 10rem; /* 160px -> 10rem */
+    height: 2rem; /* 32px -> 2rem */
+    border-radius: 0.5625rem; /* 9px -> 0.5625rem */
+    border-bottom-left-radius: 0.1875rem; /* 3px -> 0.1875rem */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 16px 10px 8px;
+    padding: 0.625rem 1rem 0.625rem 0.5rem; /* 10px 16px 10px 8px -> converted */
 }
+
+/* Radio option container */
 .radio-option {
     display: flex;
     align-items: center;
 }
+
+/* Walk duration option text */
 .option {
-    gap: 8px;
-    font-size: 8.4px;
+    gap: 0.5rem; /* 8px -> 0.5rem */
+    font-size: 0.525rem; /* 8.4px -> 0.525rem */
     color: white;
 }
+
+/* Price text */
 .price-para {
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px -> 0.75rem */
     font-weight: 700;
 }
+
+/* Custom radio button styling */
 .radio-option input[type="radio"] {
-  /* Remove default styling */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  
-  /* Create custom radio */
-  width: 12px;
-  height: 12px;
-  border: 1px solid white;
-  border-radius: 50%;
-  margin-right: 8px;
-  position: relative;
-  cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 0.75rem; /* 12px -> 0.75rem */
+    height: 0.75rem; /* 12px -> 0.75rem */
+    border: 0.0625rem solid white; /* 1px -> 0.0625rem */
+    border-radius: 50%;
+    margin-right: 0.5rem; /* 8px -> 0.5rem */
+    position: relative;
+    cursor: pointer;
 }
+
+/* Radio button checked state */
 .radio-option input[type="radio"]:checked::before {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: hsl(270, 20%, 96%);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    content: '';
+    position: absolute;
+    width: 0.5rem; /* 8px -> 0.5rem */
+    height: 0.5rem; /* 8px -> 0.5rem */
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+/* Message input container */
 .type-div {
     position: relative;
     width: 100%;
-    padding: 0 9px 11px 9px;
+    padding: 0 0.5625rem 0.6875rem 0.5625rem; /* 0 9px 11px 9px -> converted */
 }
+
+/* Message input field */
 .type-input {
     width: 100%;
-    height: 34px;
-    border-radius: 50px;
-    padding-left: 20px;
+    height: 2.125rem; /* 34px -> 2.125rem */
+    border-radius: 3.125rem; /* 50px -> 3.125rem */
+    padding-left: 1.25rem; /* 20px -> 1.25rem */
     border: none;
 }
+
+/* Input placeholder text */
 .type-input::placeholder {
     color: hsl(206, 6%, 79%);
-    font-size: 8.4px;
+    font-size: 0.525rem; /* 8.4px -> 0.525rem */
     font-family: "Rubik";
 }
+
+/* Send button icon */
 .send {
-    width: 26px;
+    width: 1.625rem; /* 26px -> 1.625rem */
 }
+
+/* Send button container */
 .send-div {
     position: absolute;
     background-color: hsl(271, 36%, 24%);
-    width: 26px;
-    height: 26px;
-    top: 4px;
-    right: 13px;
-    border-radius: 50px;
+    width: 1.625rem; /* 26px -> 1.625rem */
+    height: 1.625rem; /* 26px -> 1.625rem */
+    top: 0.25rem; /* 4px -> 0.25rem */
+    right: 0.8125rem; /* 13px -> 0.8125rem */
+    border-radius: 3.125rem; /* 50px -> 3.125rem */
     cursor: pointer;
 }
+
+/* Right side content container */
 .simple-div {
-    width: 441px;
+    width: 27.5625rem; /* 441px -> 27.5625rem */
     display: flex;
     flex-direction: column;
     justify-content: center;
-} 
+}
+
+/* Main heading */
 .simple-para {
     width: fit-content;
     font-weight: 500;
     color: hsl(271, 36%, 24%);
-    font-size: 38.25px;
-    margin-bottom: 28px;
+    font-size: 2.3906rem; /* 38.25px -> 2.3906rem */
+    margin-bottom: 1.75rem; /* 28px -> 1.75rem */
 }
+
+/* Description text */
 .stay-para {
     color: hsl(270, 7%, 64%);
     font-weight: 400;
 }
-@media (max-width : 800px) {
+
+/* Mobile responsiveness */
+@media (max-width: 50rem) { /* 800px -> 50rem */
     body {
-        padding: 64px 35px;
+        padding: 4rem 2.1875rem; /* 64px 35px -> converted */
         overflow: hidden;
     }
     main {
@@ -255,25 +323,25 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 70px;
+        gap: 4.375rem; /* 70px -> 4.375rem */
     }
-    .purple-color{
-        left: -312px;
-        height: 500px;
-        width: 500px;
+    .purple-color {
+        left: -19.5rem; /* 312px -> 19.5rem */
+        height: 31.25rem; /* 500px -> 31.25rem */
+        width: 31.25rem; /* 500px -> 31.25rem */
     }
     .white-color {
-        right: -312px;
-        height: 500px;
-        width: 500px;
+        right: -19.5rem; /* 312px -> 19.5rem */
+        height: 31.25rem; /* 500px -> 31.25rem */
+        width: 31.25rem; /* 500px -> 31.25rem */
     }
     .simple-div {
-        width: 305px;
-    } 
+        width: 19.0625rem; /* 305px -> 19.0625rem */
+    }
     .simple-para {
         width: 100%;
         text-align: center;
-        margin-bottom: 32px;
+        margin-bottom: 2rem; /* 32px -> 2rem */
     }
     .stay-para {
         text-align: center;
